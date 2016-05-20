@@ -321,7 +321,7 @@ export default class AppIntro extends Component {
       <Swiper style={styles.wrapper}
         loop={false}
         renderPagination={this.renderPagination}
-        onScroll={Animated.event(
+        onScrollBeginDrag={Animated.event(
           [{ nativeEvent: { contentOffset: { x: this.state.parallax } } }]
         )}
       >
